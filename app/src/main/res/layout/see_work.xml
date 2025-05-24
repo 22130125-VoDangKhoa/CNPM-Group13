@@ -3,362 +3,65 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E0F7FA "
-        android:backgroundTint="#A2FFE7"
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="457dp"
-        tools:ignore="MissingConstraints">
-
-        <!-- Hàng đầu tiên: Icon + Title -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Meeting (Clients)"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Subtitle -->
-
-        <!-- Địa điểm -->
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Zoom Meetings"
-            android:textColor="#666666" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="4dp"
-                android:backgroundTint="#FF5E78" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Office"
-                android:textColor="#666666" />
-        </LinearLayout>
-
-        <!-- Divider -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="#DDDDDD" />
-
-        <!-- Thời gian - thời lượng - Work tag -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_marginEnd="4dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="16:30  - 17:45 "
-                    android:textColor="#666666" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <View
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:layout_marginEnd="4dp"
-                    android:backgroundTint="#9C27B0" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Work"
-                android:textColor="#666666" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E0F7FA "
-        android:backgroundTint="#A2FFE7"
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="270dp"
-        tools:ignore="MissingConstraints">
-
-        <!-- Hàng đầu tiên: Icon + Title -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Meeting (Clients)"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Subtitle -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Zoom Meetings"
-            android:textColor="#666666" />
-
-        <!-- Địa điểm -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="4dp"
-                android:backgroundTint="#FF5E78" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Office"
-                android:textColor="#666666" />
-        </LinearLayout>
-
-        <!-- Divider -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="#DDDDDD" />
-
-        <!-- Thời gian - thời lượng - Work tag -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_marginEnd="4dp"
-                    app:tint="#666666" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="16:30  - 17:45 "
-                    android:textColor="#666666" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <View
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:layout_marginEnd="4dp"
-                    android:backgroundTint="#9C27B0" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Work"
-                android:textColor="#666666" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <androidx.cardview.widget.CardView
-        app:cardCornerRadius="12dp"
-        app:cardElevation="4dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:backgroundTint="#F4FCEB"
-        tools:ignore="MissingConstraints">
-
-    </androidx.cardview.widget.CardView>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#E0F7FA "
-        android:backgroundTint="#A2FFE7"
-        android:orientation="vertical"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="12dp"
-        tools:layout_editor_absoluteY="87dp"
-        tools:ignore="MissingConstraints">
-
-        <!-- Hàng đầu tiên: Icon + Title -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Meeting (Clients)"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Subtitle -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="Zoom Meetings"
-            android:textColor="#666666" />
-
-        <!-- Địa điểm -->
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="4dp"
-                android:backgroundTint="#FF5E78" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Office"
-                android:textColor="#666666" />
-        </LinearLayout>
-
-        <!-- Divider -->
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="#DDDDDD" />
-
-        <!-- Thời gian - thời lượng - Work tag -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical|"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:layout_width="16dp"
-                    android:layout_height="16dp"
-                    android:layout_marginEnd="4dp"
-                    app:tint="#666666" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="16:30  - 17:45 "
-                    android:textColor="#666666" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-                <View
-                    android:layout_width="6dp"
-                    android:layout_height="6dp"
-                    android:layout_marginEnd="4dp"
-                    android:backgroundTint="#9C27B0" />
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Work"
-                android:textColor="#666666" />
-        </LinearLayout>
-    </LinearLayout>
+             android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Công việc hôm nay"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="33dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="35dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        app:cardBackgroundColor="#BEEBF4"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="85dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Tất cả" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        app:cardBackgroundColor="#BEEBF4"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="85dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Việc cần làm" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        app:cardBackgroundColor="#BEEBF4"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        tools:layout_editor_absoluteX="291dp"
+        tools:layout_editor_absoluteY="85dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Việc đang làm" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
