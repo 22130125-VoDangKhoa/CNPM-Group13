@@ -12,46 +12,66 @@
         android:layout_marginTop="44dp"
         android:text="Thêm công việc mới"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="115dp" />
-
-    <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="359dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:hint="Tên công việc"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="104dp" />
-
-    <EditText
-        android:id="@+id/editTextText2"
-        android:layout_width="359dp"
-        android:layout_height="45dp"
-        android:ems="10"
-        android:hint="Thời gian"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="176dp" />
-
-    <EditText
-        android:id="@+id/editTextText3"
-        android:layout_width="366dp"
-        android:layout_height="226dp"
-        android:ems="10"
-        android:hint="Ghi chú"
-        android:inputType="text"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="253dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="337dp"
         android:layout_height="59dp"
-        android:backgroundTint="#1E91B6"
+        android:backgroundTint="#03A9F4"
         android:text="LƯU"
         android:textColorLink="#blue"
         tools:layout_editor_absoluteX="37dp"
-        tools:layout_editor_absoluteY="551dp" />
+        tools:layout_editor_absoluteY="637dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="118dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Tên công việc"
+            android:textSize="14sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="198dp">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Ghi chú" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="409dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Thời gian" />
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
