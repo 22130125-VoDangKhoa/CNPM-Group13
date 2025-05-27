@@ -12,7 +12,6 @@
         android:layout_height="59dp"
         android:backgroundTint="#03A9F4"
         android:text="XONG"
-        android:textColorLink="#blue"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="562dp" />
 
@@ -22,7 +21,6 @@
         android:layout_height="59dp"
         android:backgroundTint="#03A9F4"
         android:text="THÊM CÔNG VIỆC MỚI"
-        android:textColorLink="#blue"
         tools:layout_editor_absoluteX="37dp"
         tools:layout_editor_absoluteY="640dp" />
 

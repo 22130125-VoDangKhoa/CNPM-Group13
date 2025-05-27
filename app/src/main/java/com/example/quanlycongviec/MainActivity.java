@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         rvTasks = findViewById(R.id.rvTasks);
         fabAddTask = findViewById(R.id.fabAddTask);
 
+
         // Khởi tạo dữ liệu demo
         taskList = new ArrayList<>();
         taskList.add("Hoàn thành báo cáo");
