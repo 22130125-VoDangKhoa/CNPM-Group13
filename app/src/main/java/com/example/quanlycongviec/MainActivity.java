@@ -15,6 +15,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+
     RecyclerView rvTasks;
     FloatingActionButton fabAddTask;
     TaskAdapter taskAdapter;
@@ -22,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         rvTasks = findViewById(R.id.rvTasks);
         fabAddTask = findViewById(R.id.fabAddTask);
 
@@ -41,9 +42,10 @@ public class MainActivity extends AppCompatActivity {
         rvTasks.setAdapter(taskAdapter);
 
         fabAddTask.setOnClickListener(v -> {
-            Toast.makeText(this, "Chức năng thêm công việc sẽ làm sau", Toast.LENGTH_SHORT).show();
-            // TODO: Mở màn hình thêm công việc mới
-            // startActivity(new Intent(HomeActivity.this, AddTaskActivity.class));
+            Intent intent = new Intent(MainActivity.this, MakeNewTaskActivity.class);
+            startActivity(intent);
         });
+
     }
 }
+
